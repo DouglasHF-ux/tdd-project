@@ -1,9 +1,19 @@
 from selenium import webdriver
+import unittest
 
-browser = webdriver.Edge()
+class NewVisitorTest(unittest.TestCase):
 
-browser.get('http://localhost:8000')
+    def test_can_start_a_list_and_retrieve_it_later(self):
+        self.browser = webdriver.Edge()
 
-assert 'To-Do' in browser.title
+       
+        self.browser.get('http://localhost:8000')
 
-browser.quit()
+        
+        self.assertIn('To-Do', self.browser.title)
+
+       
+        self.browser.quit()
+
+if __name__ == '__main__':
+    unittest.main()
