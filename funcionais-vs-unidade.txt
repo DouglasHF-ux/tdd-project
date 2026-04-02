@@ -1,0 +1,2 @@
+1. Testes Funcionais testam do ponto de vista do usuario (externo), simulando acoes reais no navegador; Testes de Unidade testam do ponto de vista do desenvolvedor (interno), cobrindo unidades isoladas de codigo.
+2. Testes Funcionais cobrem fluxos completos da aplicacao (ex: abrir pagina, clicar, verificar resultado); Testes de Unidade cobrem metodos e classes de forma isolada, sem depender de navegador ou servidor.
